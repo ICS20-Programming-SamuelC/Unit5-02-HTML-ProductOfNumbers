@@ -1,6 +1,6 @@
-// Copyright (c) 2022 Ms Raffin All rights reserved
+// Copyright (c) 2022 Samuel Carlson All rights reserved
 //
-// Created by: Ms Raffin
+// Created by: Samuel Carlson
 // Created on: May 2022
 // This file contains the JS functions for index.html
 
@@ -9,16 +9,17 @@
 /**
  * This function displays all numbers from 0 up to the user number
  */
-function calculateSum() {
-  	// initialize the sum to 0
-	let sum = 0
+function calculateProduct() {
+  	// initialize the product to 0
+	let product = 0
 	// initalize numbers as an empty string
 	let numbers = ""
 	
 	// get the user number
-	let userNum = parseInt(document.getElementById('userNum').value)	
+	let userNum = parseInt(document.getElementById('userNum').value)
+  let userNum2 = parseInt(document.getElementById('userNum2').value)
 
-	// use a for loop to calculate the sum of numbers
+	// use a for loop to calculate the product of numbers of numbers
 	for (let counter = 0; counter <= userNum; counter++) {
 		// extra: use an if statement to build a string of numbers added
 		if (counter < userNum) {
@@ -29,9 +30,9 @@ function calculateSum() {
 			numbers = numbers + counter
 		}
 		// add the counter each time to the current sum
-		sum = sum + counter
+		product = product + counter
 	}
 	
   	// return the string of numbers back to html
-  	document.getElementById('display-results').innerHTML = numbers + " = " + sum
+  	document.getElementById('display-results').innerHTML = numbers + " = " + product
 }
