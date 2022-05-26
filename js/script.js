@@ -7,7 +7,7 @@
 "use strict"
 
 /**
- * This function displays all numbers from 0 up to the user number
+ * This function displays the product of 2 positive integers
  */
 function calculateProduct() {
   	// initialize the product to 0
@@ -15,11 +15,11 @@ function calculateProduct() {
 	// initalize numbers as an empty string
 	let numbers = ""
 	
-	// get the user number
+	// get the user numbers
 	let userNum = parseInt(document.getElementById('userNum').value)
   let userNum2 = parseInt(document.getElementById('userNum2').value)
 
-	// use a for loop to calculate the product of numbers of numbers
+	// use a for loop to calculate the product of 2 numbers 
 	for (let counter = 0; counter < userNum; counter++) {
     product = product + userNum2
   }
